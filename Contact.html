@@ -5,152 +5,123 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Identity by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="Contact.html" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id= "wrapper">
+<head>
+	<title>Identity by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="Contact.html" /></noscript>
+	<link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+</head>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="Test1.jpg" alt="" height="150px" width="150px" /></span>
-							<h1>Arnan boonrod</h1>
-							<p>Contact</p>
-							
-<!-- กรอบ 2 -->
-<table Width=80% style="padding: 20px;" align="center">
-		<tr>
-	
-		<tr>
-			<td>
-				<h2>Subject:  </h2>
-			</td>
-			<td>
-				<input type="text" name="subject"> 
-			</td>
-	
-		</tr>   
-	
-		<tr>
-			<td>
-				<h2>Massage: </h2>
-			</td>
-			<td>
-					<input type="text" name="Massge"  > 
-			</td>
-		</tr>
-	
-		<tr>
-				<td>
-					<h2>Name:</h2>
-				</td>
-				<td>
-						<input type="text" name="Name"  > 
-				</td>
-			</tr>
-	
-			<tr>
-					<td>
-						<h2>Gender: </h2>
-					</td>
-					<td>
-							<input type="text" name="Gender"
-					</td>
-				</tr>
-	
-				<tr>
-						<td>
-							<h2>Phone: </h2>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section>
+			<header>
+				<!-- <span class="avatar"><img src="Test1.jpg" alt="" height="150px" width="150px" /></span> -->
+				<h1 style="padding-left: 150px">CONTACT</h1>
+			</header>
+			<ul>
+				<div class="container mt-4">
+					<!-- กรอบ 2 -->
+							<form id="contact-form">
+								<div class="form-group">
+										<label for="subject">Subject: </label>
+										<input type="text"  id="subject" class="form-control">
+								</div>
+							<div class="form-group">
+
+									<label for="name">Name: </label   >
+									<input type="text"  id="name" class="form-control">
+							</div>
+							<div class="form-group">
+									<label for="gender">Gender:</label>
+									<select id="gender" name="gender">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+							</div>
+							<div class="form-group">
+									<label for="phone">Phone: </label>
+									<input type="text"  id="phone" class="form-control">
+							</div>
+							<div class="form-group">
+									<label for="email">Email: </label>
+									<input type="text" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                    <label for="facebook">facebook</label>
+                                    <input type="text"  id="facebook" class="form-control">
+                                </div>
+							<input type="submit"  value="submit" class="btn btn-primary btn-block">
+						</form>
+
+			<table class="table table-striped mt-5">
+				<thead>
+					<tr>
+						<th>SUBJECT</th>
+						<th>MASSAGE</th>
+						<th>NAME</th>
+						<th>GENDER</th>
+						<th>PHONE</th>
+						<th>EMAIL</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="contact-list"></tbody>
+			</table>
+			</div>
+		</ul>
+
+			<footer>
+				<table align="center" Width="100%">
+					<tr align="center">
+						<br>
+						<td style>
+							<h2><a href=index.html>home</a></h2>
 						</td>
-						<td>
-								<input type="text" name="Phone"  > 
+						<td style>
+							<h2><a href=Gallery.html>Gallery</a></h2>
+						</td>
+						<td style>
+							<h2><a href=Contact.html>Contact</a></h2>
 						</td>
 					</tr>
-					<tr>
-							<td>
-								<h2>Email: </h2>
-							</td>
-							<td>
-									<input type="text" name="Email"  > 
-									<input type="button" name="submit" value="Submit">
-							</td>
-						</tr>
-						
-				</tr>
-		</tr>
-	</table>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type	="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<table align="center" Width="100%">
-								<tr align="center">
-									<br>
-									<td style><h2><a href=index.html >home</a></h2></td>
-									<td style><h2><a href=Gallery.html >Gallery</a></h2></td>
-									<td style><h2><a href=Contact.html >Contact</a></h2></td>
-								</tr></table>
-						</footer>
-					</section>
+				</table>
+			</footer>
+		</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Arnan boonrod </li><li>  <a href="Mailto:Arnan_b@cmu.ac.th">Arnan_b@cmu.ac.th</a></li>
-						</ul>
-					</footer>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; Arnan boonrod </li>
+				<li> <a href="Mailto:Arnan_b@cmu.ac.th">Arnan_b@cmu.ac.th</a></li>
+			</ul>
+		</footer>
 
-			</div>
+	</div>
+	</div>
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+		
+	</script>
+	<script src="main.js"></script>
+	<script>
+		function dontGo(event) {
+		event.preventDefault();
+	}
+	document.getElementById("clickMe").addEventListener("click",dontGo);</script>
+</body>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
-</html>
+</html>	
